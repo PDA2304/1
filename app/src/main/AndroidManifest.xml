@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication1">
         <activity
+            android:name=".presentation.SingIn"
+            android:exported="false" />
+        <activity
             android:name=".presentation.OnBoardingScreen"
             android:exported="false" />
         <activity

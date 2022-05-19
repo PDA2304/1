@@ -7,9 +7,9 @@
     tools:context=".fragment.Item2Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="@color/orange"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/orange">
 
 
         <ImageView
@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/illustration2"
+            android:layout_marginBottom="150dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,21 +35,59 @@
 
 
         <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:rotation="-25"
             android:text="Welcome To \nWSR Food"
             android:textAlignment="center"
             android:textSize="29sp"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/imageView7"
             app:layout_constraintEnd_toEndOf="@+id/imageView7"
             app:layout_constraintStart_toStartOf="@+id/imageView7"
             app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
         <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+            <Button
+                android:id="@+id/sing_in"
+                android:background="@drawable/corner_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:width="150dp"
+                android:height="60dp"
+                android:text="Sing In"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+            <Button
+                android:background="@drawable/corner_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:width="150dp"
+                android:height="60dp"
+                android:text="Sing In"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,7 +100,8 @@
                 android:padding="10dp"
                 android:src="@drawable/oval_active" />
 
-            </LinearLayout>
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
