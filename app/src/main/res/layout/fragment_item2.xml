@@ -16,8 +16,8 @@
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/illustration2"
             android:layout_marginBottom="150dp"
+            android:src="@drawable/illustration2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,11 +38,12 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="cursive"
             android:rotation="-25"
             android:text="Welcome To \nWSR Food"
             android:textAlignment="center"
-            android:textSize="29sp"
             android:textColor="@color/black"
+            android:textSize="29sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView7"
             app:layout_constraintEnd_toEndOf="@+id/imageView7"
             app:layout_constraintStart_toStartOf="@+id/imageView7"
@@ -58,26 +59,30 @@
 
             <Button
                 android:id="@+id/sing_in"
-                android:background="@drawable/corner_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:width="150dp"
                 android:height="60dp"
+                android:background="@drawable/corner_button"
+                android:fontFamily="cursive"
                 android:text="Sing In"
-                android:textColor="@color/black"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
 
             <Button
-                android:background="@drawable/corner_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:width="150dp"
                 android:height="60dp"
+                android:background="@drawable/corner_button"
+                android:fontFamily="cursive"
+
                 android:text="Sing In"
-                android:textColor="@color/black"
-                android:textAllCaps="false" />
+
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
