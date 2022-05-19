@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import com.example.myapplication1.R
 import com.example.myapplication1.presentation.SingIn
+import com.example.myapplication1.presentation.SingUp
 import kotlinx.android.synthetic.main.fragment_item2.*
 import java.util.logging.Level.INFO
 
@@ -28,7 +29,11 @@ class Item2Fragment : Fragment() {
     ): View? {
         var view = inflater.inflate(R.layout.fragment_item2, container, false)
         view.findViewById<Button>(R.id.sing_in).setOnClickListener {
-            var intent = Intent(this.context,SingIn::class.java);
+            var intent = Intent(this.context, SingIn::class.java);
+            startActivity(intent);
+        }
+        view.findViewById<Button>(R.id.sing_up).setOnClickListener {
+            var intent = Intent(this.context, SingUp::class.java);
             startActivity(intent);
         }
         return view

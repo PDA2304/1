@@ -87,6 +87,7 @@
             android:background="@drawable/corner_button"
             android:backgroundTint="@color/orange"
             android:text="Login"
+            android:id="@+id/login"
             android:textAllCaps="false" />
     </LinearLayout>
 
